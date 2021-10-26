@@ -12,9 +12,44 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300,400;700&display=swap" rel="stylesheet">
         <!-- CSS -->
-        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/styles.css">
     </head>
 <body>
-    
+    <header class="header">
+        <div class="bar conteiner">
+            <p>Viaje</p>
+            <nav>
+                <a href="#">Lugares para hospedarte</a>
+                <a href="#">Experiencias</a>
+                <a href="#">Experiencias en línea</a>
+            </nav>
+            <a href="#">Hazte Anfritión</a>
+        </div>
+        <form class="form conteiner">
+            <div class="field">
+                <label for="ubication">Ubicación</label>
+                <input type="text" id="ubication" placeholder="¿A dónde viajas?">
+            </div>
+            <div class="field">
+                <label for="arrival">Llegada</label>
+                <input type="date" id="arrival" placeholder="">
+            </div>
+            <div class="field">
+                <label for="exit">Salida</label>
+                <input type="date" id="exit" placeholder="">
+            </div>
+            <div class="field">
+                <label for="guest">Huéspedes</label>
+                <input type="text" id="guest" placeholder="¿Cuántos?">
+            </div>
+            <div class="field">
+                <input class="submit" type="submit" value="Buscar">
+            </div>
+        </form>
+        <div class="search conteiner">
+            <p>¿No sabes a donde ir?</p>
+            <a href="#">Búsqueda Flexible</a>
+        </div>
+    </header>
 </body>
 </html>
