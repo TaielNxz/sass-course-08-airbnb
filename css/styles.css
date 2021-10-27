@@ -270,8 +270,6 @@ ul {
 @media (min-width: 1024px) {
     .places-list {
         grid-template-columns: repeat( 4 ,1fr );
-        overflow-x: unset;
-        gap: 2rem;
     }
 }
 
@@ -356,4 +354,41 @@ ul {
     .host-content a {
         display: inline-block;
     }
+}
+
+/* ==== experience ==== */
+
+.experiences-list {
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr );
+    column-gap: 4rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+}
+
+@media (min-width: 768px) {
+    .experiences-list {
+        grid-template-columns: repeat( 3 ,1fr );
+        overflow-x: unset;
+        overflow-y: unset;
+        gap: 2rem;
+    }
+}
+
+.experience {
+    width: 50vw;
+    margin: 0 auto;
+    scroll-snap-align: center;
+}
+
+@media (min-width: 768px) {
+    .experience {
+        width: 100%;
+        scroll-snap-align: unset;
+    }
+}
+
+.experience img {
+    border-radius: 2rem;
 }
