@@ -193,3 +193,54 @@ ul {
         display: inline-block;
     }
 }
+
+/* ==== Destinations  ==== */
+
+.destinations h2 {
+    margin: 2rem auto;
+}
+
+.destinations-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .destinations-list {
+        display: grid;
+        grid-template-columns: repeat( 2, 1fr );
+        gap: 4rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .destinations-list {
+        grid-template-columns: repeat( 4, 1fr );
+        gap: 2rem;
+    }
+}
+
+/* ==== Destinations - destination ==== */
+
+.destination {
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-evenly;
+}
+
+@media (min-width: 1024px) {
+    .destination {
+        gap: 2rem;
+    }
+}
+
+.destination-img {
+    width: 14rem;
+}
+
+.destination-text h2,
+.destination-text p {
+    margin: 0;
+}
