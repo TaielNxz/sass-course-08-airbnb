@@ -290,3 +290,70 @@ ul {
 .place img {
     border-radius: 2rem;
 }
+
+/* ==== Host ==== */
+
+.host {
+    background-image: 
+        linear-gradient( to bottom, var(--black) 0%, var(--black) 50%, transparent 50% ),
+        url('../img/anfitrion.jpg');
+    background-repeat: no-repeat;
+    background-position: 65% bottom;
+    background-size: 100%, 70rem;
+    
+    display: grid;
+    grid-template-rows: repeat( 2,1fr );
+    padding: 5rem;
+    row-gap: 15rem;
+}
+
+@media (min-width: 480px) {
+    .host {
+        background-position: left bottom;
+        background-size: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .host {
+        background-image: 
+            linear-gradient(to right, var(--black) 0%, var(--black) 50%, transparent 55% ),
+            url('../img/anfitrion.jpg');
+        background-position: center right;
+        background-size: 100%, 75%;
+
+        grid-template-rows: unset;
+        row-gap: unset;
+        grid-template-columns: repeat( 2, 1fr );
+        gap: 5rem;
+    }
+    .host-content {
+        padding: 10rem 0;
+    }
+}
+
+.host-content h2 {
+    color: var(--white);
+}
+
+.host-content p {
+    color: var(--white);
+}
+
+.host-content a {
+    background-color: var(--white);
+    color: var(--black);
+    border-radius: 1rem;
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    padding: 1rem 4rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .host-content a {
+        display: inline-block;
+    }
+}
