@@ -244,3 +244,49 @@ ul {
 .destination-text p {
     margin: 0;
 }
+
+/* ==== Places ==== */
+
+.places h2 {
+    margin: 2rem auto;
+}
+
+.places-list {
+    display: grid;
+    grid-template-columns: repeat( 4, 1fr );
+    column-gap: 4rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+}
+
+@media (min-width: 768px) {
+    .places-list {
+        grid-template-columns: repeat( 2 ,1fr );
+        overflow-x: unset;
+        gap: 2rem;
+    }
+}
+@media (min-width: 1024px) {
+    .places-list {
+        grid-template-columns: repeat( 4 ,1fr );
+        overflow-x: unset;
+        gap: 2rem;
+    }
+}
+
+.place {
+    width: 90vw;
+    margin: 0 auto;
+    scroll-snap-align: center;
+}
+
+@media (min-width: 768px) {
+    .place {
+        width: 100%;
+    }
+}
+
+.place img {
+    border-radius: 2rem;
+}
