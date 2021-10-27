@@ -392,3 +392,50 @@ ul {
 .experience img {
     border-radius: 2rem;
 }
+
+/* ==== Footer ==== */
+
+.footer {
+    border-top: 1px solid #cecece;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat( 4, 1fr );
+    padding: 5rem 0;
+}
+
+.footer-widget {
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+}
+
+.footer-widget h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.footer-widget a {
+    font-size: 1.4rem;
+    color: var(--grey);
+}
+
+.footer-bar {
+    border-top: 1px solid #cecece;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+
+.footer-bar a {
+    font-size: 1.4rem;
+    color: var(--grey);
+    margin-right: 3rem;
+}
+
+.footer-bar a::before {
+    content: '-';
+    font-weight: 700;
+    margin-right: 1.5rem;
+}
