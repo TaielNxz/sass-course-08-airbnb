@@ -1,441 +1,456 @@
 :root {
-    --primaryFont: 'Lexend', sans-serif;
+  --primaryFont: "Lexend", sans-serif;
 
-    --primary: #ff385c;
-    --secondary: #bd1e59; 
-    --black: #000;
-    --white: #FFFFFF;
-    --grey: #686868;
-    --lightGrey: #e1e1e1;
+  --primary: #ff385c;
+  --secondary: #bd1e59;
+  --black: #000;
+  --white: #ffffff;
+  --grey: #686868;
+  --lightGrey: #e1e1e1;
 }
 
 html {
-    font-size: 62.5%;
-    box-sizing: border-box;
+  font-size: 62.5%;
+  box-sizing: border-box;
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
-  
+
 body {
-    font-family: var(--primaryFont);
-    font-size: 1.6rem;
+  font-family: var(--primaryFont);
+  font-size: 1.6rem;
 }
 
-h1, h2, h3 {
-    margin: 0;
-    line-height: 1.5;
+h1,
+h2,
+h3 {
+  margin: 0;
+  line-height: 1.5;
 }
 
 h1 {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 
 h2 {
-    font-size: 3.2rem;
+  font-size: 3.2rem;
 }
 
 h3 {
-    font-size: 2.4rem;
+  font-size: 2.4rem;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 p {
-    color: var(--black);
-    font-size: 2rem;
+  color: var(--black);
+  font-size: 2rem;
 }
 
 img {
-    max-width: 100%;
-    display: block;
+  max-width: 100%;
+  display: block;
 }
 
 ul {
-    padding:0;
-    list-style: none;
-    margin: 0;
+  padding: 0;
+  list-style: none;
+  margin: 0;
 }
 
 .section {
-    padding: 2rem 0;
+  padding: 2rem 0;
 }
 
 .conteiner {
-    width: 95%;
-    max-width: 1200px;
-    margin: 0 auto;
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* ==== Header ==== */
 
 .header {
-    background-image: url(../img/header.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    width: 100%;
-    padding: 3rem 0 20rem 0;
+  background-image: url(../img/header.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  padding: 3rem 0 20rem 0;
 }
 
 /* ==== Header - bar ==== */
 
 .bar {
-    display: none;
+  display: none;
 }
 
 @media (min-width: 768px) {
-    
-    .bar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+  .bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    .bar p {
-        color: var(--white);
-        margin: 0;
-    }
+  .bar p {
+    color: var(--white);
+    margin: 0;
+  }
 
-    .bar nav {
-        display: flex;
-        gap: 4rem;
-    }
+  .bar nav {
+    display: flex;
+    gap: 4rem;
+  }
 
-    .bar a {
-        color: var(--white);
-    }
+  .bar a {
+    color: var(--white);
+  }
 }
 
 /* ==== Header - form ==== */
 
 .form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 90rem;
-    margin: 5rem auto;
-    padding: 3rem 0;
-    background-color: var(--white);
-    box-shadow: 0 3px 7px 0 var(--grey);
-    border-radius: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 90rem;
+  margin: 5rem auto;
+  padding: 3rem 0;
+  background-color: var(--white);
+  box-shadow: 0 3px 7px 0 var(--grey);
+  border-radius: 5rem;
 }
 
 @media (min-width: 768px) {
-    .form {
-        flex-direction: row;
-        padding: 0;
-    }
+  .form {
+    flex-direction: row;
+    padding: 0;
+  }
 }
 
 .field {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
 }
 
 @media (min-width: 768px) {
-    .field:first-child {
-        padding-left: 4rem;
-    }
+  .field:first-child {
+    padding-left: 4rem;
+  }
 }
 
 .field label {
-    font-size: 1.2rem;
-    font-weight: 900;
+  font-size: 1.2rem;
+  font-weight: 900;
 }
 
 .field input:not(.submit) {
-    border: none;
-    width: 100%;
-    color: var(--grey);
+  border: none;
+  width: 100%;
+  color: var(--grey);
 }
 
 .field .submit {
-    background-image: radial-gradient( circle, var(--primary) 0%, var(--secondary) 100%);
-    border: none;
-    border-radius: 2rem;
-    color: #fff;
-    display: block;
-    font-size: 1.2rem;
-    font-weight: 700;
-    height: 4rem;
-    padding: 0 2rem;
-    text-transform: uppercase;
+  background-image: radial-gradient(
+    circle,
+    var(--primary) 0%,
+    var(--secondary) 100%
+  );
+  border: none;
+  border-radius: 2rem;
+  color: #fff;
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  height: 4rem;
+  padding: 0 2rem;
+  text-transform: uppercase;
 }
 
 /* ==== Header - search ==== */
 
 .search {
-    margin-top: 5rem;
-    text-align: center;
+  margin-top: 5rem;
+  text-align: center;
 }
 
 .search a {
-    background-color: var(--white);
-    color: var(--primary);
-    border-radius: 3rem;
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    padding: 2rem 4rem;
-    margin-top: 1rem;
+  background-color: var(--white);
+  color: var(--primary);
+  border-radius: 3rem;
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 2rem 4rem;
+  margin-top: 1rem;
 }
 
 @media (min-width: 768px) {
-    .search {
-        margin: 30rem auto 0 auto;
-    }
-    .search a {
-        display: inline-block;
-    }
+  .search {
+    margin: 30rem auto 0 auto;
+  }
+  .search a {
+    display: inline-block;
+  }
 }
 
 /* ==== Destinations  ==== */
 
 .destinations h2 {
-    margin: 2rem auto;
+  margin: 2rem auto;
 }
 
 .destinations-list {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 @media (min-width: 768px) {
-    .destinations-list {
-        display: grid;
-        grid-template-columns: repeat( 2, 1fr );
-        gap: 4rem;
-    }
+  .destinations-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
 }
 
 @media (min-width: 1024px) {
-    .destinations-list {
-        grid-template-columns: repeat( 4, 1fr );
-        gap: 2rem;
-    }
+  .destinations-list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
 }
 
 /* ==== Destinations - destination ==== */
 
 .destination {
-    align-items: center;
-    display: flex;
-    gap: 2rem;
-    justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-evenly;
 }
 
 @media (min-width: 1024px) {
-    .destination {
-        gap: 2rem;
-    }
+  .destination {
+    gap: 2rem;
+  }
 }
 
 .destination-img {
-    width: 14rem;
+  width: 14rem;
 }
 
 .destination-text h2,
 .destination-text p {
-    margin: 0;
+  margin: 0;
 }
 
 /* ==== Places ==== */
 
 .places h2 {
-    margin: 2rem auto;
+  margin: 2rem auto;
 }
 
 .places-list {
-    display: grid;
-    grid-template-columns: repeat( 4, 1fr );
-    column-gap: 4rem;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    scroll-snap-type: x mandatory;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 4rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
 }
 
 @media (min-width: 768px) {
-    .places-list {
-        grid-template-columns: repeat( 2 ,1fr );
-        overflow-x: unset;
-        gap: 2rem;
-    }
+  .places-list {
+    grid-template-columns: repeat(2, 1fr);
+    overflow-x: unset;
+    gap: 2rem;
+  }
 }
 @media (min-width: 1024px) {
-    .places-list {
-        grid-template-columns: repeat( 4 ,1fr );
-    }
+  .places-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .place {
-    width: 90vw;
-    margin: 0 auto;
-    scroll-snap-align: center;
+  width: 90vw;
+  margin: 0 auto;
+  scroll-snap-align: center;
 }
 
 @media (min-width: 768px) {
-    .place {
-        width: 100%;
-    }
+  .place {
+    width: 100%;
+  }
 }
 
 .place img {
-    border-radius: 2rem;
+  border-radius: 2rem;
 }
 
 /* ==== Host ==== */
 
 .host {
-    background-image: 
-        linear-gradient( to bottom, var(--black) 0%, var(--black) 50%, transparent 50% ),
-        url('../img/anfitrion.jpg');
-    background-repeat: no-repeat;
-    background-position: 65% bottom;
-    background-size: 100%, 70rem;
-    
-    display: grid;
-    grid-template-rows: repeat( 2,1fr );
-    padding: 5rem;
-    row-gap: 15rem;
+  background-image: linear-gradient(
+      to bottom,
+      var(--black) 0%,
+      var(--black) 50%,
+      transparent 50%
+    ),
+    url("../img/anfitrion.jpg");
+  background-repeat: no-repeat;
+  background-position: 65% bottom;
+  background-size: 100%, 70rem;
+
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  padding: 5rem;
+  row-gap: 15rem;
 }
 
 @media (min-width: 480px) {
-    .host {
-        background-position: left bottom;
-        background-size: 100%;
-    }
+  .host {
+    background-position: left bottom;
+    background-size: 100%;
+  }
 }
 
 @media (min-width: 768px) {
-    .host {
-        background-image: 
-            linear-gradient(to right, var(--black) 0%, var(--black) 50%, transparent 55% ),
-            url('../img/anfitrion.jpg');
-        background-position: center right;
-        background-size: 100%, 75%;
+  .host {
+    background-image: linear-gradient(
+        to right,
+        var(--black) 0%,
+        var(--black) 50%,
+        transparent 55%
+      ),
+      url("../img/anfitrion.jpg");
+    background-position: center right;
+    background-size: 100%, 75%;
 
-        grid-template-rows: unset;
-        row-gap: unset;
-        grid-template-columns: repeat( 2, 1fr );
-        gap: 5rem;
-    }
-    .host-content {
-        padding: 10rem 0;
-    }
+    grid-template-rows: unset;
+    row-gap: unset;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+  .host-content {
+    padding: 10rem 0;
+  }
 }
 
 .host-content h2 {
-    color: var(--white);
+  color: var(--white);
 }
 
 .host-content p {
-    color: var(--white);
+  color: var(--white);
 }
 
 .host-content a {
-    background-color: var(--white);
-    color: var(--black);
-    border-radius: 1rem;
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    margin-top: 1rem;
-    padding: 1rem 4rem;
-    text-align: center;
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: 1rem;
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  padding: 1rem 4rem;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
-    .host-content a {
-        display: inline-block;
-    }
+  .host-content a {
+    display: inline-block;
+  }
 }
 
 /* ==== experience ==== */
 
 .experiences-list {
-    display: grid;
-    grid-template-columns: repeat( 3, 1fr );
-    column-gap: 4rem;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    scroll-snap-type: x mandatory;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 4rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
 }
 
 @media (min-width: 768px) {
-    .experiences-list {
-        grid-template-columns: repeat( 3 ,1fr );
-        overflow-x: unset;
-        overflow-y: unset;
-        gap: 2rem;
-    }
+  .experiences-list {
+    grid-template-columns: repeat(3, 1fr);
+    overflow-x: unset;
+    overflow-y: unset;
+    gap: 2rem;
+  }
 }
 
 .experience {
-    width: 50vw;
-    margin: 0 auto;
-    scroll-snap-align: center;
+  width: 50vw;
+  margin: 0 auto;
+  scroll-snap-align: center;
 }
 
 @media (min-width: 768px) {
-    .experience {
-        width: 100%;
-        scroll-snap-align: unset;
-    }
+  .experience {
+    width: 100%;
+    scroll-snap-align: unset;
+  }
 }
 
 .experience img {
-    border-radius: 2rem;
+  border-radius: 2rem;
 }
 
 /* ==== Footer ==== */
 
 .footer {
-    border-top: 1px solid #cecece;
+  border-top: 1px solid #cecece;
 }
 
 .footer-grid {
-    display: grid;
-    grid-template-columns: repeat( 4, 1fr );
-    padding: 5rem 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 5rem 0;
 }
 
 .footer-widget {
-    display: flex;
-    flex-direction: column;
-    line-height: 2;
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
 }
 
 .footer-widget h3 {
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
 }
 
 .footer-widget a {
-    font-size: 1.4rem;
-    color: var(--grey);
+  font-size: 1.4rem;
+  color: var(--grey);
 }
 
 .footer-bar {
-    border-top: 1px solid #cecece;
-    display: flex;
-    align-items: center;
-    padding: 2rem;
+  border-top: 1px solid #cecece;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
 }
 
 .footer-bar a {
-    font-size: 1.4rem;
-    color: var(--grey);
-    margin-right: 3rem;
+  font-size: 1.4rem;
+  color: var(--grey);
+  margin-right: 3rem;
 }
 
 .footer-bar a::before {
-    content: '-';
-    font-weight: 700;
-    margin-right: 1.5rem;
+  content: "-";
+  font-weight: 700;
+  margin-right: 1.5rem;
 }
