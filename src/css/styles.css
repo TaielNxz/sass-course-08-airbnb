@@ -56,6 +56,7 @@ p {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 ul {
@@ -79,10 +80,21 @@ ul {
 .header {
   width: 100%;
   padding: 3rem 0 20rem 0;
-  background-image: url(../img/header.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+
+.notavif.notweb .header {
+  background-image: url(../img/header.jpg);
+}
+
+.webp .header {
+  background-image: url(../img/header.webp);
+}
+
+.avif .header {
+  background-image: url(../img/header.avif);
 }
 
 /* ==== Header - bar ==== */
@@ -299,21 +311,43 @@ ul {
 /* ==== Host ==== */
 
 .host {
-
   display: grid;
   padding: 5rem;
+  background-repeat: no-repeat;
+  background-position: 65% bottom;
+  background-size: 100%, 70rem;
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 15rem;
+}
+
+.notavif.notweb .host {
   background-image: linear-gradient(
       to bottom,
       var(--black) 0%,
       var(--black) 50%,
       transparent 50%
     ),
-    url("../img/anfitrion.jpg");
-  background-repeat: no-repeat;
-  background-position: 65% bottom;
-  background-size: 100%, 70rem;
-  grid-template-rows: repeat(2, 1fr);
-  row-gap: 15rem;
+    url(../img/anfitrion.jpg);
+}
+
+.webp .host {
+  background-image: linear-gradient(
+      to bottom,
+      var(--black) 0%,
+      var(--black) 50%,
+      transparent 50%
+    ),
+    url(../img/anfitrion.webp);
+}
+
+.avif .host {
+  background-image: linear-gradient(
+      to bottom,
+      var(--black) 0%,
+      var(--black) 50%,
+      transparent 50%
+    ),
+    url(../img/anfitrion.avif);
 }
 
 @media (min-width: 480px) {
@@ -325,13 +359,6 @@ ul {
 
 @media (min-width: 768px) {
   .host {
-    background-image: linear-gradient(
-        to right,
-        var(--black) 0%,
-        var(--black) 50%,
-        transparent 55%
-      ),
-      url("../img/anfitrion.jpg");
     background-position: center right;
     background-size: 100%, 75%;
 
@@ -340,6 +367,37 @@ ul {
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
   }
+
+  .notavif.notweb .host {
+    background-image: linear-gradient(
+        to right,
+        var(--black) 0%,
+        var(--black) 50%,
+        transparent 50%
+      ),
+      url(../img/anfitrion.jpg);
+  }
+  
+  .webp .host {
+    background-image: linear-gradient(
+        to right,
+        var(--black) 0%,
+        var(--black) 50%,
+        transparent 50%
+      ),
+      url(../img/anfitrion.webp);
+  }
+  
+  .avif .host {
+    background-image: linear-gradient(
+        to right,
+        var(--black) 0%,
+        var(--black) 50%,
+        transparent 50%
+      ),
+      url(../img/anfitrion.avif);
+  }
+
   .host-content {
     padding: 10rem 0;
   }
